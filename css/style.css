@@ -1,0 +1,179 @@
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+    background-color: black;
+}
+header {    
+    position: fixed;
+    height: 59px; 
+    z-index: 9999;        
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    background-color: black;
+}
+.logo {
+    float: left;        
+}
+.logo img {
+    height: 50px;    
+}
+.navbar {
+    overflow: hidden;
+}
+.navbar a {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: seashell;    
+    padding: 16px 14px;        
+}
+.big-image {
+    position: relative;
+    text-align: center;
+}
+.big-image img {
+    margin-top: 60px;
+    width: 1200px;
+    height: 700px;
+}
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 100%;
+    color: seashell;       
+}
+.top-text {
+    position: relative;
+    text-align: center;    
+    color: seashell;
+}
+.top-text {
+    text-decoration: none;
+}
+.small-images {
+    display:inline-block;
+    width: 1000px;    
+    text-align: center;   
+}
+.row {
+    display: flex;
+    align-items: center; 
+}
+.column {
+    width: 33.33%;
+    padding: 5px;  
+    text-align: center;  
+    float: left;  
+}
+.column img {
+   width: 300px;
+   height: 200px; 
+   padding: 0;
+   text-align: center;
+   vertical-align: middle;
+}
+.bottom-image {
+    position: relative;
+    text-align: center;
+}
+.bottom-image img {
+    margin-top: 60px;
+    width: 1200px;
+    height: 500px;
+}
+.location-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 100%;
+    color: seashell; 
+    opacity: 1;
+} 
+.downtown {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    transform: translate(-50%, -50%);    
+    width: 300px;
+    height: 280px;
+    background-color: black;
+    color: seashell; 
+    opacity: 1;  
+}
+.east-baysed {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 300px;
+    height: 280px;
+    background-color: black;
+    color: seashell; 
+    opacity: 1;  
+}
+.oakdale {
+    position: absolute;
+    top: 57%;
+    left: 70%;
+    transform: translate(-50%, -50%);    
+    width: 300px;
+    height: 280px;
+    background-color: black;
+    color: seashell; 
+    opacity: 1;  
+}
+.downtown p, .east-baysed p, .oakdale p {
+    margin: 35px;
+}
+.contact {
+    text-align: center;
+    height: 200px;
+}
+.contact h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.copyright {
+    margin-left: 20px;
+    text-align: left;
+}
+/*Adding a rule for small screens like phones*/ 
+@media screen and (max-width: 500px) {
+    .navbar a {
+        font-size: 15px;
+    }
+    .big-image img {
+        width: 500px;
+        height: 350px;
+    }
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+    .column img {
+        width:150px;
+        height: 100px;
+    }
+    .bottom-image img {
+        width: 500px;
+        height: 250px;
+    }
+    .downtown, .east-baysed, .oakdale {
+        width: 100px;
+        height: 80px;
+        opacity: 1;  
+    }
+    .downtown p, .east-baysed p, .oakdale p {
+        margin: 5px;
+        font-size: 10px;
+    } 
+    .downtown h3, .east-baysed h3, .oakdale h3 {
+        margin: 5px;
+        font-size: 10px;
+    }  
