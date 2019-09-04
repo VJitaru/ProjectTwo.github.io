@@ -55,10 +55,10 @@ header {
 .top-text {
     text-decoration: none;
 }
-.small-images {
-    display:inline-block;
+.small-images {    
     width: 1000px;    
-    text-align: center;   
+    text-align: center; 
+    margin: 0 auto;
 }
 .row {
     display: flex;
